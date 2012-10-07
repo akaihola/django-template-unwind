@@ -1,11 +1,22 @@
-===========================================================================
- django-template-unwind – helper for debugging complex template structures
-===========================================================================
+============================================================
+ django-template-unwind – debug complex template structures
+============================================================
 
-The django-template-unwind app injects information about template blocks
-into rendered templates.
+This app injects information about template blocks into rendered templates.
 It is most useful for debugging the template structure
 of a complex Django project.
+
+This should never be used in production,
+and will also break correct rendering of pages in development.
+Only use the tool for enhancing the page markup
+while examining the HTML source code.
+
+In rendered template, all invocations of
+``{% block %}``, ``{% endblock %}`` and ``{{ block.super }}``
+are annotated with the name of the block and the current template.
+
+The template name also includes the template inheritance path
+through the hierarchy created with ``{% extends %}``.
 
 Quickstart
 ==========
