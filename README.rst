@@ -23,7 +23,7 @@ Quickstart
 
 Install the django-template-unwind Python package::
 
-    pip install -e git+http://github.com/akaihola/django-template-unwind.git
+    pip install -e git+git://github.com/akaihola/django-template-unwind.git#egg=template_unwind
 
 Add django-template-unwind to ``INSTALLED_APPS`` in your project settings::
 
