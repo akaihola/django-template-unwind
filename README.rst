@@ -11,7 +11,7 @@ and will also break correct rendering of pages in development.
 Only use the tool for enhancing the page markup
 while examining the HTML source code.
 
-In rendered template, all invocations of
+In rendered templates, all invocations of
 ``{% block %}``, ``{% endblock %}`` and ``{{ block.super }}``
 are annotated with the name of the block and the current template.
 
